@@ -1,0 +1,267 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+:root {
+  --white: #e2e2e2;
+  --grey: #161616;
+  --black: #1a1a1a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: var(--grey);
+  background-image: radial-gradient(#868482 1%, #0000 4%);
+  background-position: 0 0;
+  background-size: 2em 2em;
+  background-attachment: fixed;
+  font-family: Outfit, sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+}
+
+.main-menu {
+  border-bottom: 2px solid #242424;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20%;
+  padding: 2em 0;
+  display: flex;
+}
+
+.contact-sec a {
+  width: 12vw;
+  align-items: center;
+  gap: 1em;
+  text-decoration: none;
+  display: flex;
+}
+
+.contact-sec h1 {
+  color: var(--white);
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.contact-sec i {
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid #242424;
+  border-radius: 50%;
+  padding: 1em;
+  font-size: 1.3em;
+}
+
+nav ul {
+  gap: 1em;
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  color: var(--white);
+  font-size: 1em;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.logo {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+.hero {
+  height: 80vh;
+  width: 100vw;
+  place-items: center;
+  margin-top: 4%;
+  display: grid;
+}
+
+.profile-img img {
+  height: 8em;
+  width: auto;
+}
+
+.profile-img h1 {
+  text-align: center;
+  color: var(--white);
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.hero-heading {
+  height: 40vh;
+  width: 60vw;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+  margin: 0 20%;
+  display: flex;
+  transform: translateY(-100px);
+}
+
+.heading {
+  text-align: center;
+  width: 35vw;
+  color: #0000;
+  background: -webkit-linear-gradient(0deg, #d6cdc2 57% 64%, #2d2c2c 98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 4em;
+  font-weight: 500;
+}
+
+.primary-cta {
+  height: 3em;
+  width: 8em;
+  background-color: var(--black);
+  color: var(--white);
+  border: .5px solid #242424;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-weight: 100;
+  transition: transform .2s ease-in;
+}
+
+.primary-cta:hover {
+  transform: scale(.8);
+}
+
+.about {
+  height: 80vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4em;
+  display: flex;
+}
+
+.about-heading {
+  margin: 2% 20%;
+}
+
+.heading2 {
+  font-size: 2.5em;
+}
+
+.cards {
+  background: var(--grey);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+  margin: 4% 20%;
+  display: grid;
+}
+
+.card {
+  height: 16em;
+  width: 15em;
+  background-color: var(--black);
+  color: var(--white);
+  border: 1px solid #242424;
+  flex-direction: column;
+  justify-content: center;
+  gap: .6em;
+  padding: 6em 2em 0;
+  display: flex;
+}
+
+.card i {
+  background: -webkit-linear-gradient(0deg, #d6cdc2 57% 64%, #2d2c2c 98%);
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2em;
+  font-weight: 100;
+}
+
+.cards h2 {
+  background: -webkit-linear-gradient(0deg, #d6cdc2 57% 64%, #2d2c2c 98%);
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.card-para {
+  background: -webkit-linear-gradient(0deg, #d6cdc2 57% 64%, #2d2c2c 98%);
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: .9rem;
+  font-weight: 100;
+}
+
+.divider {
+  height: 2px;
+  width: 70%;
+  background-color: #242424;
+}
+
+.contact {
+  height: 50vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  gap: 5em;
+  display: flex;
+}
+
+.contact-cta {
+  height: 3em;
+  width: 8em;
+  background-color: var(--black);
+  color: var(--white);
+  border: .5px solid #242424;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+  font-size: 1.5em;
+  font-weight: 100;
+  transition: transform .2s ease-in;
+  display: flex;
+}
+
+.contact-cta:hover {
+  transform: scale(.8);
+}
+
+footer {
+  height: 10vh;
+  width: 100vw;
+}
+
+.main-footer {
+  justify-content: space-between;
+  margin: 0 20%;
+  padding: 2em 0;
+  display: flex;
+}
+
+.copy-write {
+  color: var(--white);
+  font-size: .9em;
+  font-weight: 100;
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
